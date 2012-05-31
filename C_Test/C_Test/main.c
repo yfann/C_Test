@@ -5,35 +5,35 @@ int main()
 {
 	char *a="this is a string";
 	char *t,*p;
-	int tt=5;
-	t=(char*)malloc(tt);
-
-	while(tt-->0)
-	{
-		*t--='s';
-	}
+	t=narmal_reverse(a);
 	printf(t);
-
 	getche();
 }
 
 char* copy_str(char* s)
 {
-	char *p;
-	p=(char*)malloc(16);
+	char *p,*t,*h;
+	int size;
+	h=s;
+
+	while(*++h)
+	{
+		size++;
+	}
+	p=t=(char*)malloc((size+1)*sizeof(char));
 	while(*s)
 	{
 		*p++=*s++;
 	}
-	return p;
+	*p='\0';
+	return t;
 }
 
 char* narmal_reverse(char* s)
 {
 	char* p=s;
 	int size=0;
-	char *store;
-	char *q;
+	char *store,*q;
 	while(*++p)
 	{
 		size++;
@@ -42,7 +42,7 @@ char* narmal_reverse(char* s)
 	q=store;
 	while(p>=s)
 	{
-		*q++=*p--;
+		*q++=*--p;
 	}
 	*q='\0';
 	return store;
