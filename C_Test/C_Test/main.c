@@ -3,17 +3,17 @@ char* narmal_reverse(char* s);
 char* copy_str(char* s);
 int main()
 {
-	char *a="this is a string\0";
-	char *t;
-	char *p;
-	p=(char*)malloc(16);
+	char *a="this is a string";
+	char *t,*p;
+	int tt=5;
+	t=(char*)malloc(tt);
 
-	while(*a)
+	while(tt-->0)
 	{
-		*p++=*a++;
+		*t--='s';
 	}
-	*p='\0';
-	printf(p);
+	printf(t);
+
 	getche();
 }
 

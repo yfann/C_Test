@@ -1,5 +1,5 @@
 ﻿  main.c
 e:\projects\c_test\c_test\c_test\main.c(9): warning C4013: 'malloc' undefined; assuming extern returning int
 e:\projects\c_test\c_test\c_test\main.c(17): warning C4013: 'getche' undefined; assuming extern returning int
-e:\projects\c_test\c_test\c_test\main.c(7): warning C4101: 't' : unreferenced local variable
+e:\projects\c_test\c_test\c_test\main.c(7): warning C4101: 'p' : unreferenced local variable
   C_Test.vcxproj -> E:\Projects\C_Test\C_Test\Debug\C_Test.exe
