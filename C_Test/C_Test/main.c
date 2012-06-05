@@ -1,21 +1,35 @@
 #include <stdio.h>
+#include "Sorts.h"
 char* narmal_reverse(char* s);
 char* copy_str(char* s);
 char* swap_reverse(char* s);
 char* xor_reverse(char* s);
 void reverse(char *left,char *right);
 char* word_reverse(char *s);
+void* print_intarray(int *a,int len);
 int main()
 {
 	char *a="this is a string";
+	int i[10]={23,22,33,11,44,54,23,21,43,43};
 	char *t,*p;
+	int *in;
 	//t=narmal_reverse(a);
-	t=copy_str(a);
+	//t=copy_str(a);
 	//t=swap_reverse(t);
 	//t=xor_reverse(t);
-	t=word_reverse(t);
-	printf(t);
+	//t=word_reverse(t);
+	in=BubbleSort(i,10);
+	print_intarray(in,10);
 	getche();
+}
+
+void* print_intarray(int *a,int len)
+{
+	int i;
+	for(i=0;i<len;i++)
+	{
+		printf("%3d",*(a+i));
+	}
 }
 
 char* copy_str(char* s)

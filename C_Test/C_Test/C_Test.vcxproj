@@ -75,6 +75,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Sorts.c" />
+    <ClCompile Include="TopN.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sorts.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
