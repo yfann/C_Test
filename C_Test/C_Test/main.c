@@ -18,8 +18,9 @@ int main()
 	//t=swap_reverse(t);
 	//t=xor_reverse(t);
 	//t=word_reverse(t);
-	in=BubbleSort(i,10);
-	print_intarray(in,10);
+	//in=BubbleSort(i,10);
+	build_max_heapify(i,10);
+	print_intarray(i,10);
 	getche();
 }
 
