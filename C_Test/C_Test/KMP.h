@@ -1,0 +1,1 @@
+int normal_match(char *source,char *pattern);

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Sorts.h"
+#include "KMP.h"
 char* narmal_reverse(char* s);
 char* copy_str(char* s);
 char* swap_reverse(char* s);
@@ -10,17 +11,21 @@ void* print_intarray(int *a,int len);
 int main()
 {
 	char *a="this is a string";
+	char *pattern="str";
 	int i[10]={23,22,33,11,44,54,23,21,43,43};
 	char *t,*p;
 	int *in;
+	int pos;
 	//t=narmal_reverse(a);
 	//t=copy_str(a);
 	//t=swap_reverse(t);
 	//t=xor_reverse(t);
 	//t=word_reverse(t);
 	//in=BubbleSort(i,10);
-	build_max_heapify(i,10);
-	print_intarray(i,10);
+	//build_max_heapify(i,10);
+	//print_intarray(i,10);
+	pos=normal_match(a,pattern);
+	printf("%d",pos);
 	getche();
 }
 

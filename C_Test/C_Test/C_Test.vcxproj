@@ -74,11 +74,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="KMP.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="Sorts.c" />
     <ClCompile Include="TopN.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="KMP.h" />
     <ClInclude Include="Sorts.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

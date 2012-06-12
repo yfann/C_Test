@@ -24,9 +24,15 @@
     <ClCompile Include="Sorts.c">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="KMP.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sorts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KMP.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
