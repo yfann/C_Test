@@ -61,3 +61,34 @@ void build_max_heapify(int *a,int num)
 }
 
 //quick sort
+
+void quickSort(int *a,int i,int j)
+{
+	
+	int left=i,right=j;
+	int pivot=a[left];
+	if(i>j)
+		return;
+	while(left!=right)
+	{
+		while(left<right&&a[right]>pivot)
+		{
+			right--;
+		}
+		if(left<right)
+		{
+			a[left++]=a[right];
+		}
+		while(left<right&&a[left]<=pivot)
+		{
+			left++;
+		}
+		if(left<right)
+		{
+			a[right--]=a[left];
+		}
+	}
+	a[left]=pivot;
+	quickSort(a,i,left-1);
+	quickSort(a,left+1,j);
+}

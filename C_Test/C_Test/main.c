@@ -12,7 +12,7 @@ int main()
 {
 	char *a="this is a string";
 	char *pattern="str";
-	int i[10]={23,22,33,11,44,54,23,21,43,43};
+	int i[10]={9,4,6,8,2,7,3,1,5,0};
 	char *t,*p;
 	int *in;
 	int pos;
@@ -23,9 +23,10 @@ int main()
 	//t=word_reverse(t);
 	//in=BubbleSort(i,10);
 	//build_max_heapify(i,10);
-	//print_intarray(i,10);
-	pos=normal_match(a,pattern);
-	printf("%d",pos);
+	quickSort(i,0,9);
+	print_intarray(i,10);
+	//pos=normal_match(a,pattern);
+	//printf("%d",pos);
 	getche();
 }
 
